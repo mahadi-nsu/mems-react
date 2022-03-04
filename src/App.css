@@ -1,6 +1,7 @@
 body {
   background-color: #98ccfd;
   overflow: hidden;
+  height: 100%;
 }
 
 .lazyDog {
@@ -10,57 +11,14 @@ body {
   font-family: "DMSans-Regular";
 }
 
-/* .container {
-  letter-spacing: 5px;
-}
-
-.lazyDog {
-  font-family: "lazyDog";
-}
-.dm {
-  font-family: "DMSans-Regular";
-}
-.header_text {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  padding-top: 0px;
-}
-.header_t1 {
-  margin: 0;
-  font-size: 500px;
-}
-.header_t2 {
-  margin: 0;
-  font-size: 300px;
-}
-.header_t3 {
-  margin: 0;
-  font-size: 500px;
-}
-.header_t4 {
-  margin: 0;
-  font-size: 300px;
-}
-
-.secondary {
-  text-align: center;
-  font: normal normal normal 70px/91px DM Sans;
-  letter-spacing: -3.5px;
-  color: #ffffff;
-  text-transform: lowercase;
-  opacity: 0.65;
-} */
-
-.div_second {
-  border: 1px solid red;
+.main_div {
+  min-height: 100%;
+  position: relative;
 }
 .div_second_text1 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 300px;
-  margin-top: 20px;
+  margin-top: 90px !important;
 }
 
 .div_second_text1_para {
@@ -73,11 +31,10 @@ body {
 }
 
 .div_second_text2 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: center;
   font-size: 62px;
   color: #ffffff;
-  margin-top: 20px;
 }
 .div_second_text3 {
   text-align: center;
@@ -93,29 +50,27 @@ body {
   margin: 10px;
   letter-spacing: 2px;
   opacity: 1;
-  padding-top : 2px;
+  padding-top: 2px;
   padding-bottom: 3px;
 }
 .div_second_text2_para {
   margin: 0px;
 }
 
-.div_images {
-  height: 400px;
-  overflow: hidden;
-}
 .image-1 {
   position: absolute;
   right: 10px;
-  /* bottom: 5px; */
-  bottom: 13px;
+  bottom: -12rem;
   z-index: 2;
+  /* width: 29rem; */
+  height: 24rem; 
 }
 
 .image-2 {
-  position: relative;
-  top: 210px;
-  left: 650px;
+  position: fixed;
+  top: 40rem;
+  right: -47rem;
+  /* height : 100%; */
 }
 
 @media (min-width: 640px) {

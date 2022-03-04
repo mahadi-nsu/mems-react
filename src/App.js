@@ -3,19 +3,6 @@ import "./fonts/lazy_dog.ttf";
 
 function App() {
   return (
-    // <div className="container">
-    //   <div className="lazyDog header_text">
-    //     <p className="header_t1">m</p>
-    //     <p className="header_t2">E</p>
-    //     <p className="header_t3">m</p>
-    //     <p className="header_t4">S</p>
-    //   </div>
-
-    //   <div className="secondary">
-    //     <p className="secondary_text">restoring earth’s memory</p>
-    //   </div>
-    // </div>
-
     <div className="main_div">
       <div className="div_second">
         <div className="div_second_text1">
