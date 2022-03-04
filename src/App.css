@@ -59,17 +59,16 @@ body {
 
 .image-1 {
   position: absolute;
-  right: 10px;
-  bottom: -12rem;
+  right: 1%;
+  bottom:-40%;
   z-index: 2;
-  /* width: 29rem; */
   height: 24rem; 
 }
 
 .image-2 {
   position: fixed;
-  top: 40rem;
-  right: -47rem;
+  top: 73%;
+  right: -38%;
   /* height : 100%; */
 }
 
