@@ -60,6 +60,7 @@ body {
   color: #ffffff;
   font-size: 4.5rem;
   opacity: 65%;
+  z-index: 3;
   text-align: center;
 }
 
@@ -70,7 +71,7 @@ body {
 
 .image-1 {
   position: absolute;
-  right: 6rem;
+  right: 2.5rem;
   bottom: 99%;
   z-index: 2;
   height: 24rem; 
