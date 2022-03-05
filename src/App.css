@@ -1,5 +1,6 @@
 body {
-  
+  /* background-color: #98ccfd; */
+  background: #98ccfd url("../public/image/background-overlay.png") no-repeat fixed center;
   overflow: hidden;
   height: 100vh;
 }
@@ -12,7 +13,7 @@ body {
 }
 
 .main_div {
-  background-color: #98ccfd;
+  
   height: 100vh;
   position: relative;
 }
@@ -29,28 +30,35 @@ body {
 }
 
 .div_second_text1_para {
-  font-size: 315px;
+  font-size:19rem;
   color: #ffffff;
   text-align: center;
   margin: 0;
 }
 .div_second_text3 {
+  position: relative;
+  bottom: 10rem;
   text-align: center;
   background-color: #fcc930;
   border-radius: 50px;
-  font-size: 35px;
+  font-size: 55px;
   font-weight: bold;
   letter-spacing: 2px;
   opacity: 1;
-  padding: 16px 45px 16px 45px ;
+  padding: 8px 45px 16px 45px ;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.div_second_text3:hover{
+  background-color: #fcc217;
 }
 
 .div_second_text2_para {
+  position: relative;
+  bottom: 7rem;
   color: #ffffff;
-  font-size: 62px;
-  margin-top: -60px;
+  font-size: 4.5rem;
   opacity: 65%;
   text-align: center;
 }
@@ -87,7 +95,7 @@ body {
 
 /* laptop low res */
 
-@media (min-width: 641px) and (max-width: 1367px) {
+@media (min-width: 1235px) and (max-width: 1367px) {
   .div_images {
     bottom: -15rem;
     right: 22rem;
@@ -101,16 +109,35 @@ body {
   }
 }
 
-
-/* mobile */
-body {
-  background-color: #98ccfd;
-  overflow: hidden;
-  min-height: max-content;
-  height: 100%;
+/* tab */
+@media (min-width: 641px) and (max-width: 1234px) {
+  .div_images {
+    bottom: -10rem;
+    right: 10rem;
+    width: 100%;
+  }
+  .image-1 {
+    right: -11rem;
+    height: 20rem; 
+  }
+  .image-3 {
+    position: relative;
+    top: -4rem;
+    right: -23rem;
+    width: 100%;
+  }
+  .div_second{
+    transform: scale(0.7);
+  }
 }
 
+
+/* mobile */
+
 @media (max-width: 640px) { 
+  body {
+    max-height: max-content;
+  }
 
   .main_div {
     height: 100%;
@@ -123,8 +150,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    height: 60vh;
+    gap: 0rem;
+    height: 50vh;
     width: 100vw;
   }
   
@@ -135,21 +162,22 @@ body {
     margin: 0;
   }
   .div_second_text3 {
+    bottom: 7rem;
     text-align: center;
-    /* background-color: #fcc930; */
     border-radius: 50px;
-    font-size: 1.25rem;
+    font-size: 1.50rem;
     font-weight: bold;
     letter-spacing: 2px;
     opacity: 1;
-    padding: 6px 20px 6px 20px ;
+    padding: 5px 15px 5px 15px ;
     cursor: pointer;
   }
   
   .div_second_text2_para {
+    bottom: 5rem;
     color: #ffffff;
-    font-size: 1.25rem;
-    padding: 35px;
+    font-size: 1.40rem;
+    padding: 37px;
     font-weight: 300;
     opacity: 65%;
     text-align: center;
@@ -159,7 +187,6 @@ body {
     bottom: -2rem;
     position: absolute;
     overflow: hidden;
-    /* display: none; */
   }
   .image-1 {
     position: relative;
@@ -173,9 +200,9 @@ body {
 .image-2{
   position: absolute;
     right: -4rem;
-    top: 12rem;
+    top: 8rem;
     z-index: 1;
-    height: 16rem;
+    height: 20rem;
   display: block;
 }
 .image-3 {

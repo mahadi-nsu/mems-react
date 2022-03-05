@@ -5,13 +5,13 @@ function App() {
   return (
     <div className="main_div">
       <div className="div_second">
-        <div>
+        <div className="text-div">
           <p className="div_second_text1_para lazyDog">MEMS</p>
           <p className="div_second_text2_para">restoring earth's memory</p>
         </div>
 
         <div className="div_second_text3">
-          Coming soon!
+          coming soon!
         </div>
       </div>
 
