@@ -1,5 +1,5 @@
 import "./App.css";
-import "./fonts/lazy_dog.ttf";
+import "./fonts/Lazydog.otf"
 
 function App() {
   return (

@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "lazyDog";
-  src: local("lazy_dog"),
-    url("./fonts/lazy_dog.ttf") format("truetype");
-}
-@font-face {
   font-family: "DMSans-Regular";
   src: local("DMSans-Regular"),
     url("./fonts/DMSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lazydog";
+  src: local("Lazydog"),
+    url("./fonts/Lazydog.otf") format("truetype");
 }
 
 
