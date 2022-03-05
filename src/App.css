@@ -1,5 +1,4 @@
 body {
-  /* background-color: #98ccfd; */
   background: #98ccfd url("../public/image/background-overlay.png") no-repeat fixed center;
   overflow: hidden;
   height: 100vh;
@@ -13,7 +12,7 @@ body {
 }
 
 .main_div {
-  
+  overflow: hidden;
   height: 100vh;
   position: relative;
 }
@@ -137,7 +136,7 @@ body {
 
 @media (max-width: 640px) { 
   body {
-    max-height: max-content;
+    height: calc(100vh - calc(100vh - 100%))
   }
 
   .main_div {
@@ -185,23 +184,23 @@ body {
   }
   .div_images {
     width: 100vw;
-    bottom: -2rem;
+    bottom: 0rem;
     position: absolute;
     overflow: hidden;
   }
   .image-1 {
     position: relative;
     -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-    right: 12rem;
-    bottom: -20rem;
+    transform: scaleX(-1);
+    right: 11rem;
+    bottom: -22rem;
     z-index: 0;
     height: 20rem; 
   }
 .image-2{
   position: absolute;
     right: -4rem;
-    top: 8rem;
+    top: 12rem;
     z-index: 1;
     height: 20rem;
   display: block;
@@ -210,7 +209,7 @@ body {
   position: relative;
   right: 6rem;
   top: auto;
-  bottom: -4rem;
-  width: 200vw;
+  bottom: -7rem;
+  width: 240vw;
 }
  }
