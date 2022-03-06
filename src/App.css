@@ -29,18 +29,18 @@ body {
 }
 
 .div_second_text1_para {
-  font-size:19rem;
+  font-size:14rem;
   color: #ffffff;
   text-align: center;
   margin: 0;
 }
 .div_second_text3 {
   position: relative;
-  bottom: 10rem;
+  bottom: 7rem;
   text-align: center;
   background-color: #fcc930;
   border-radius: 50px;
-  font-size: 55px;
+  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
   opacity: 1;
@@ -55,9 +55,9 @@ body {
 
 .div_second_text2_para {
   position: relative;
-  bottom: 7rem;
+  bottom: 6rem;
   color: #ffffff;
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   opacity: 65%;
   z-index: 3;
   text-align: center;
@@ -151,21 +151,21 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0rem;
-    height: 50vh;
+    height: 55vh;
     width: 100vw;
   }
   
   .div_second_text1_para {
-    font-size: 6rem;
+    font-size: 7rem;
     color: #ffffff;
     text-align: center;
     margin: 0;
   }
   .div_second_text3 {
-    bottom: 7rem;
+    bottom: 6rem;
     text-align: center;
     border-radius: 50px;
-    font-size: 1.50rem;
+    font-size: 1.70rem;
     font-weight: bold;
     letter-spacing: 2px;
     opacity: 1;
@@ -176,7 +176,7 @@ body {
   .div_second_text2_para {
     bottom: 5rem;
     color: #ffffff;
-    font-size: 1.40rem;
+    font-size: 1.70rem;
     padding: 37px;
     font-weight: 300;
     opacity: 65%;
