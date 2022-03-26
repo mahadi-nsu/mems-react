@@ -4,28 +4,29 @@ import "./fonts/Lazydog.otf"
 function App() {
   return (
     <div className="main_div">
+      <img className="stars" src="/image/stars.png" alt="" />
       <div className="div_second">
         <div className="text-div">
           <p className="div_second_text1_para lazyDog">MEMS</p>
-          <p className="div_second_text2_para">restoring earth's memory</p>
+          <p className="div_second_text2_para">6000+ mems on the ethereum blockchain</p>
         </div>
 
         <div className="div_second_text3">
-          coming soon!
+          Coming soon
         </div>
       </div>
+      <div className="image_div">
+        <img className="the_image" alt="mems" src="/image/image_61.png" />
+      </div>
 
-      <div className="div_images">
-        <img className="image-1" alt="mems" src="/image/man_pencil.png" />
-        <img className="image-2" alt="mems2" src="/image/Image_33.png" />
-        <img className="image-3" alt="mems" src="/image/base.png" />
-
+      <div className="social_div">
+        <img src="/image/twitter.png" alt="twitter" className="social_logo" />
+        <img src="/image/Shape.png" alt="Shape" className="social_logo" />
+        <img src="/image/discord.png" alt="discord" className="social_logo" />
+        <img src="/image/opensea.png" alt="opensea" className="social_logo" />
       </div>
     </div>
   );
 }
-
-// 54
-// group_21 Image_33.png
 
 export default App;
