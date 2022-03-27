@@ -1,5 +1,11 @@
 body {
-  background: #98ccfd url("../public/image/background-overlay.png") no-repeat fixed center;
+  background-image:
+    linear-gradient(to bottom, rgba(115,86,255,.50),rgba(134,146,255,.0),rgba(153,204,255,.0)),
+    url('../public/image/mems-clouds.png');
+  background-size: 100% 100% , cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
   overflow: hidden;
   height: 100vh;
 }
@@ -15,6 +21,12 @@ body {
   overflow: hidden;
   height: 100vh;
   position: relative;
+}
+
+.stars{
+  position: absolute;
+  top: 5%;
+  height: 20vh;
 }
 
 .div_second {
@@ -36,29 +48,33 @@ body {
 }
 .div_second_text3 {
   position: relative;
-  bottom: 7rem;
+  bottom: 5rem;
   text-align: center;
-  background-color: #fcc930;
+  background-color: #7459ff;
   border-radius: 50px;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 1.90rem;
+  color: #fff;
+  /* font-weight: bold; */
   letter-spacing: 2px;
   opacity: 1;
-  padding: 9px 45px 16px 45px ;
+  padding: 9px 60px 16px 60px ;
   cursor: pointer;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .div_second_text3:hover{
-  background-color: #fcc217;
+  background-color: #5334ec;
+  transform: translateY(-0.10em);
+  transition-duration: 100ms;
+;
 }
 
 .div_second_text2_para {
   position: relative;
-  bottom: 6rem;
+  bottom: 3rem;
   color: #ffffff;
-  font-size: 3.2rem;
-  opacity: 65%;
+  font-size: 2rem;
+  /* opacity: 65%; */
   z-index: 3;
   text-align: center;
 }
@@ -68,41 +84,54 @@ body {
   bottom: -22rem;
 }
 
-.image-1 {
-  position: absolute;
-  right: 2.5rem;
-  bottom: 99%;
-  z-index: 2;
-  height: 24rem; 
+.the_image {
+  /* border: 1px solid red; */
+  width: 37vw;
+  position:absolute;
+  right: -8rem;
+  bottom: -16rem;
 }
 
-.image-2 {
-  display:none;
+.social_div {
   position: absolute;
-  right: 6rem;
-  bottom: 99%;
-  z-index: 2;
-  height: 24rem; 
-}
-
-.image-3 {
-  position: relative;
-  top: -6rem;
-  right: -41rem;
+  bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   width: 100%;
+}
+.social_logo{
+  height: 25px;
+  cursor: pointer;
+}
+.social_logo:hover {
+  transform: translateY(-0.10em);
+  transition-duration: 100ms;
+}
+
+
+/* 4k display */
+@media (min-width: 2560px) {
+  .the_image {
+    right: -12rem;
+    bottom: -19rem;
+  }
 }
 
 
 /* laptop low res */
 
 @media (min-width: 1235px) and (max-width: 1367px) {
+  body {
+    /* background-size: contain; */
+  }
+  .the_image {
+    right: -6rem;
+    bottom: -12rem;
+  }
   .div_images {
     bottom: -15rem;
     right: 22rem;
-  }
-  .image-1 {
-    right: -21rem;
-    height: 20rem; 
   }
   .div_second{
     transform: scale(0.7);
@@ -111,19 +140,25 @@ body {
 
 /* tab */
 @media (min-width: 641px) and (max-width: 1234px) {
+  body {
+    background-size: cover;
+  }
+  .image_div {
+    overflow-x: hidden;
+    /* border: 1px solid #fff; */
+    position: absolute;
+    right: 0;
+    bottom:8rem;
+  }
+  .the_image {
+    position: relative;
+    width: 45vw;
+    right: -6rem;
+    bottom: auto;
+  }
   .div_images {
     bottom: -10rem;
     right: 10rem;
-    width: 100%;
-  }
-  .image-1 {
-    right: -11rem;
-    height: 20rem; 
-  }
-  .image-3 {
-    position: relative;
-    top: -4rem;
-    right: -23rem;
     width: 100%;
   }
   .div_second{
@@ -136,12 +171,20 @@ body {
 
 @media (max-width: 640px) { 
   body {
-    height: calc(100vh - calc(100vh - 100%))
+    background-image:
+    linear-gradient(to bottom, rgba(115,86,255,.70),rgba(153,204,255,.0),rgba(153,204,255,.0),rgba(153,204,255,0)),
+    url('../public/image/mems-clouds-mobile.png');
+  background-position: top;
+  background-repeat: no-repeat;
   }
 
   .main_div {
     height: 100%;
     position: static;
+  }
+
+  .stars{
+    display: none;
   }
   
   .div_second {
@@ -156,60 +199,62 @@ body {
   }
   
   .div_second_text1_para {
+    position: relative;
+    top: 4rem;
     font-size: 7rem;
     color: #ffffff;
     text-align: center;
     margin: 0;
   }
   .div_second_text3 {
-    bottom: 6rem;
+    bottom: 3rem;
     text-align: center;
     border-radius: 50px;
-    font-size: 1.70rem;
-    font-weight: bold;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     opacity: 1;
-    padding: 5px 15px 5px 15px ;
+    padding: 5px 20px 5px 20px ;
     cursor: pointer;
   }
   
   .div_second_text2_para {
-    bottom: 5rem;
+    bottom: auto;
     color: #ffffff;
-    font-size: 1.70rem;
+    font-size: 26px;
     padding: 37px;
-    font-weight: 300;
-    opacity: 65%;
+    font-weight: 400;
+    /* opacity: 65%; */
     text-align: center;
   }
+  .image_div {
+    overflow-x: hidden;
+    /* border: 1px solid #fff; */
+    position: absolute;
+    right: 0;
+    bottom:8rem;
+  }
+  .the_image {
+    position: relative;
+    width: 73vw;
+    right: -3.5rem;
+    bottom: auto;
+  }
+
   .div_images {
     width: 100vw;
     bottom: 0rem;
     position: absolute;
     overflow: hidden;
   }
-  .image-1 {
-    position: relative;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    right: 11rem;
-    bottom: -22rem;
-    z-index: 0;
-    height: 20rem; 
-  }
-.image-2{
-  position: absolute;
-    right: -4rem;
-    top: 12rem;
-    z-index: 1;
-    height: 20rem;
-  display: block;
+.social_logo{
+  height: 20px;
 }
-.image-3 {
-  position: relative;
-  right: 6rem;
-  top: auto;
-  bottom: -7rem;
-  width: 240vw;
+.social_div {
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
  }
