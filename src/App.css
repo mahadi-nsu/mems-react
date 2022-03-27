@@ -1,7 +1,7 @@
 body {
   background-image:
-    linear-gradient(to bottom, rgba(115,86,255,.50),rgba(134,146,255,.0),rgba(153,204,255,.0)),
-    url('../public/image/mems-clouds.png');
+    linear-gradient(to bottom, rgba(115,86,255,.40),rgba(153,204,255,.80),rgba(153,204,255,.01)),
+    url('../public/image/mems-landing.svg');
   background-size: 100% 100% , cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -41,18 +41,32 @@ body {
 }
 
 .div_second_text1_para {
-  font-size:14rem;
+  position: relative;
+  bottom: 2rem;
+  font-size:17rem;
   color: #ffffff;
   text-align: center;
   margin: 0;
 }
-.div_second_text3 {
+
+.div_second_text2_para {
+  font-family: "Lazydog";
   position: relative;
-  bottom: 5rem;
+  bottom: 3rem;
+  color: #ffffff;
+  font-size: 2rem;
+  z-index: 3;
+  text-align: center;
+}
+
+.div_second_text3 {
+  font-family: "Lazydog";
+  position: relative;
+  bottom: 1rem;
   text-align: center;
   background-color: #7459ff;
   border-radius: 50px;
-  font-size: 1.90rem;
+  font-size: 2rem;
   color: #fff;
   letter-spacing: 2px;
   opacity: 1;
@@ -68,25 +82,13 @@ body {
 ;
 }
 
-.div_second_text2_para {
-  position: relative;
-  bottom: 3rem;
-  color: #ffffff;
-  font-size: 2rem;
-  z-index: 3;
-  text-align: center;
-}
 
-.div_images {
-  position: absolute;
-  bottom: -22rem;
-}
 
 .the_image {
   width: 37vw;
   position:absolute;
-  right: -8rem;
-  bottom: -16rem;
+  right: -9rem;
+  bottom: -17rem;
 }
 
 .social_div {
@@ -110,8 +112,8 @@ body {
 /* 4k display */
 @media (min-width: 2560px) {
   .the_image {
-    right: -12rem;
-    bottom: -19rem;
+    right: -15rem;
+    bottom: -22rem;
   }
 }
 
@@ -168,10 +170,10 @@ body {
   body {
     height: calc(100vh - calc(100vh - 100%));
     background-image:
-    linear-gradient(to bottom, rgba(115,86,255,.70),rgba(153,204,255,.0),rgba(153,204,255,.0),rgba(153,204,255,0)),
-    url('../public/image/mems-clouds-mobile.png');
-    background-size: 100% 100vh;
-  background-position: top;
+    linear-gradient(to bottom, rgba(115,86,255,.90),rgba(153,204,255,.60),rgba(153,204,255,.95),rgba(153,204,255,1)),
+    url('../public/image/mems-landing.svg');
+    background-size: 100% 100vh,200rem 40rem;
+  background-position:top center;
   background-repeat: no-repeat;
   }
 
@@ -234,7 +236,7 @@ body {
   .the_image {
     position: relative;
     width: 73vw;
-    right: -3.5rem;
+    right: -4.5rem;
     bottom: auto;
   }
 
