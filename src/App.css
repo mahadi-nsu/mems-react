@@ -54,7 +54,6 @@ body {
   border-radius: 50px;
   font-size: 1.90rem;
   color: #fff;
-  /* font-weight: bold; */
   letter-spacing: 2px;
   opacity: 1;
   padding: 9px 60px 16px 60px ;
@@ -65,7 +64,7 @@ body {
 .div_second_text3:hover{
   background-color: #5334ec;
   transform: translateY(-0.10em);
-  transition-duration: 100ms;
+  transition-duration: 300ms;
 ;
 }
 
@@ -74,7 +73,6 @@ body {
   bottom: 3rem;
   color: #ffffff;
   font-size: 2rem;
-  /* opacity: 65%; */
   z-index: 3;
   text-align: center;
 }
@@ -85,7 +83,6 @@ body {
 }
 
 .the_image {
-  /* border: 1px solid red; */
   width: 37vw;
   position:absolute;
   right: -8rem;
@@ -106,7 +103,7 @@ body {
 }
 .social_logo:hover {
   transform: translateY(-0.10em);
-  transition-duration: 100ms;
+  transition-duration: 300ms;
 }
 
 
@@ -122,9 +119,7 @@ body {
 /* laptop low res */
 
 @media (min-width: 1235px) and (max-width: 1367px) {
-  body {
-    /* background-size: contain; */
-  }
+  
   .the_image {
     right: -6rem;
     bottom: -12rem;
@@ -171,9 +166,11 @@ body {
 
 @media (max-width: 640px) { 
   body {
+    height: calc(100vh - calc(100vh - 100%));
     background-image:
     linear-gradient(to bottom, rgba(115,86,255,.70),rgba(153,204,255,.0),rgba(153,204,255,.0),rgba(153,204,255,0)),
     url('../public/image/mems-clouds-mobile.png');
+    background-size: 100% 100vh;
   background-position: top;
   background-repeat: no-repeat;
   }
@@ -207,14 +204,15 @@ body {
     margin: 0;
   }
   .div_second_text3 {
-    bottom: 3rem;
+    bottom: 2.5rem;
     text-align: center;
     border-radius: 50px;
     font-size: 1.2rem;
     letter-spacing: 2px;
     opacity: 1;
-    padding: 5px 20px 5px 20px ;
+    padding: 7px 25px 7px 25px ;
     cursor: pointer;
+    z-index: 10;
   }
   
   .div_second_text2_para {
@@ -231,7 +229,7 @@ body {
     /* border: 1px solid #fff; */
     position: absolute;
     right: 0;
-    bottom:8rem;
+    bottom:7rem;
   }
   .the_image {
     position: relative;

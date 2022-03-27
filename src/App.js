@@ -20,10 +20,19 @@ function App() {
       </div>
 
       <div className="social_div">
-        <img src="/image/twitter.png" alt="twitter" className="social_logo" />
-        <img src="/image/Shape.png" alt="Shape" className="social_logo" />
-        <img src="/image/discord.png" alt="discord" className="social_logo" />
-        <img src="/image/opensea.png" alt="opensea" className="social_logo" />
+        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+          <img src="/image/twitter.png" alt="twitter" className="social_logo" />
+        </a>
+        <a href="https://www.medium.com" target="_blank" rel="noreferrer">
+          <img src="/image/Shape.png" alt="medium" className="social_logo" />
+        </a>
+        {/* <a href="https://www.google.com" target="_blank" rel="noreferrer">
+          <img src="/image/discord.png" alt="discord" className="social_logo" />
+        </a>
+        <a href="https://www.google.com" target="_blank" rel="noreferrer">
+          <img src="/image/opensea.png" alt="opensea" className="social_logo" />
+        </a> */}
+
       </div>
     </div>
   );
