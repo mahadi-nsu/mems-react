@@ -325,7 +325,7 @@ body {
 }
  }
  
- @media screen and (min-height: 300px) and (max-height: 668px) {
+ @media screen and (min-height: 300px) and (max-height: 550px) {
   .image_div {
     overflow-x: hidden;
     /* border: 1px solid rgb(26, 22, 22); */
