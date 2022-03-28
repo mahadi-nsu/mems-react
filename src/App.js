@@ -13,7 +13,10 @@ function App() {
           </p>
         </div>
 
-        <div className="div_second_text3">Coming soon</div>
+        <div className="coming_soon_div">
+          <span className="coming_soon_text">Coming soon</span>
+        </div>
+        {/* <div className="div_second_text3">Coming soon</div> */}
       </div>
       <div className="image_div">
         <img className="the_image" alt="mems" src="/image/meme-landing.svg" />

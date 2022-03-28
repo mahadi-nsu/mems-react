@@ -42,8 +42,8 @@ body {
 
 .div_second_text1_para {
   position: relative;
-  bottom: 2rem;
-  font-size:17rem;
+  bottom: 1rem;
+  font-size:300px;
   letter-spacing: -23px;
   color: #ffffff;
   text-align: center;
@@ -53,43 +53,43 @@ body {
 .div_second_text2_para {
   font-family: "Lazydog";
   position: relative;
-  bottom: 3rem;
+  bottom: 4rem;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 32px;
   z-index: 3;
   text-align: center;
 }
-
-.div_second_text3 {
-  font-family: "Lazydog";
-  position: relative;
-  bottom: 1rem;
-  text-align: center;
+.coming_soon_div{
+  width: 356px;
+  height: 53px;
+  display: grid;
+  place-content: center;
   background-color: #7459ff;
+  cursor: pointer;
+  position: relative;
+  bottom: 4rem;
   border-radius: 50px;
+  /* border: 1px solid #fff; */
+}
+.coming_soon_text {
+  font-family: "Lazydog";
   font-size: 30px;
   color: #fff;
   letter-spacing: 2px;
-  opacity: 1;
-  padding: 9px 60px 16px 60px ;
-  cursor: pointer;
-  /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.div_second_text3:hover{
+.coming_soon_div:hover{
   background-color: #5334ec;
   transform: translateY(-0.10em);
   transition-duration: 300ms;
 ;
 }
-
-
-
 .the_image {
   width: 37vw;
   position:absolute;
   right: -9rem;
   bottom: -17rem;
+  z-index: -1;
 }
 
 .social_div {
@@ -111,7 +111,7 @@ body {
 
 
 /* 4k display */
-@media (min-width: 2560px) {
+@media (min-width: 2460px) {
   .the_image {
     right: -15rem;
     bottom: -22rem;
@@ -122,10 +122,12 @@ body {
 /* laptop low res */
 
 @media (min-width: 1235px) and (max-width: 1367px) {
-  
   .the_image {
+    /* border: 1px solid green; */
+    width: 37vw;
+    position:absolute;
     right: -6rem;
-    bottom: -12rem;
+    bottom: -14rem;
   }
   .div_images {
     bottom: -15rem;
@@ -136,8 +138,29 @@ body {
   }
 }
 
+/* laptop very low res */
+
+@media (max-width: 1234px) and (min-width: 1024px){
+  
+  .the_image {
+    width: 37vw;
+    position:absolute;
+    right: -6rem;
+    bottom: -10rem;
+    /* border: 1px solid pink */
+  }
+  .div_images {
+    bottom: -15rem;
+    right: 22rem;
+  }
+  .div_second{
+    transform: scale(0.7);
+  }
+}
+
+
 /* tab */
-@media (min-width: 641px) and (max-width: 1234px) {
+@media (min-height: 1024px) and (max-width: 1234px) {
   body {
     background-size: cover;
   }
@@ -153,6 +176,7 @@ body {
     width: 45vw;
     right: -6rem;
     bottom: auto;
+    /* border: 1px solid yellow */
   }
   .div_images {
     bottom: -10rem;
@@ -165,7 +189,7 @@ body {
 }
 
 
-/* mobile */
+/* mobile big */
 
 @media (max-width: 640px) { 
   body {
@@ -207,17 +231,7 @@ body {
     text-align: center;
     margin: 0;
   }
-  .div_second_text3 {
-    bottom: 2.5rem;
-    text-align: center;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    opacity: 1;
-    padding: 7px 25px 7px 25px ;
-    cursor: pointer;
-    z-index: 10;
-  }
+
   
   .div_second_text2_para {
     bottom: auto;
@@ -227,6 +241,23 @@ body {
     font-weight: 400;
     /* opacity: 65%; */
     text-align: center;
+  }
+  .coming_soon_div{
+    width: 212.28px;
+    height: 31px;
+    display: grid;
+    place-content: center;
+    background-color: #7459ff;
+    cursor: pointer;
+    position: relative;
+    bottom: 2rem;
+    border-radius: 50px;
+  }
+  .coming_soon_text {
+    font-family: "Lazydog";
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
   }
   .image_div {
     overflow-x: hidden;
@@ -240,6 +271,7 @@ body {
     width: 73vw;
     right: -4.5rem;
     bottom: auto;
+    /* border: 1px solid rgb(128, 47, 0) */
   }
 
   .div_images {
@@ -260,3 +292,21 @@ body {
   width: 100%;
 }
  }
+ 
+ /* @media (max-width: 375px) and (max-height: 668px) {
+  .image_div {
+    overflow-x: hidden;
+    border: 1px solid rgb(26, 22, 22);
+    position: absolute;
+    right: 0;
+    bottom:7rem;
+  }
+  .the_image {
+    position: relative;
+    width: 73vw;
+    right: -4.5rem;
+    bottom: auto;
+    border: 1px solid rgb(172, 145, 130)
+  }
+
+ } */
