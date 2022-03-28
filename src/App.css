@@ -44,6 +44,7 @@ body {
   position: relative;
   bottom: 2rem;
   font-size:17rem;
+  letter-spacing: -23px;
   color: #ffffff;
   text-align: center;
   margin: 0;
@@ -66,7 +67,7 @@ body {
   text-align: center;
   background-color: #7459ff;
   border-radius: 50px;
-  font-size: 2rem;
+  font-size: 30px;
   color: #fff;
   letter-spacing: 2px;
   opacity: 1;
