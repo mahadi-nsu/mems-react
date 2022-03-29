@@ -19,7 +19,7 @@ function App() {
         {/* <div className="div_second_text3">Coming soon</div> */}
       </div>
       <div className="image_div">
-        <img className="the_image" alt="mems" src="/image/meme-landing.svg" />
+        <img className="the_image" alt="mems" src="/image/mem-final.svg" />
       </div>
 
       <div className="social_div">
